@@ -1,0 +1,8 @@
+node_modules
+backend/uploads
+dist
+coverage
+frontend/vite.config.js
+frontend/vitest.config.js
+babel.config.cjs
+jest.config.cjs

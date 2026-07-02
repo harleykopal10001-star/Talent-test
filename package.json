@@ -1,0 +1,49 @@
+{
+  "name": "platform-tech-test",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start-backend": "nodemon backend/src/index.js",
+    "start-frontend": "vite frontend",
+    "lint": "eslint . --ext .js,.jsx",
+    "lint:fix": "eslint . --ext .js,.jsx --fix",
+    "test:frontend": "vitest run --config frontend/vitest.config.js",
+    "test:backend": "jest --config jest.config.cjs",
+    "test": "npm run test:frontend && npm run test:backend"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^5.0.0",
+    "multer": "^2.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-dropzone": "^15.0.0",
+    "react-hook-form": "^7.80.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@vitejs/plugin-react": "^4.0.0",
+    "babel-jest": "^30.4.1",
+    "babel-plugin-transform-import-meta": "^3.0.0",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "jest": "^30.4.2",
+    "jsdom": "^29.1.1",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.2.2",
+    "vite": "^6.0.0",
+    "vitest": "^4.1.9"
+  }
+}
